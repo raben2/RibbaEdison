@@ -1,20 +1,12 @@
-# RibbaPi
-RibbaPi - APA102 based 16x16 LED-Matrix fitted inside Ribba picture frame, controlled by Raspberry Pi in Python
+# RibbaEdison
+RibbaEdison - APA102 based 16x16 LED-Matrix fitted inside Ribba picture frame, controlled by Raspberry Pi in Python
 
-I made a video that documents the build process and shows off some of its capabilities:
-[![IMAGE ALT TEXT](http://img.youtube.com/vi/UbVjETJd87c/0.jpg)](http://www.youtube.com/watch?v=UbVjETJd87c "RibbaPi - 16x16 APA102 LED matrix build in a Ribba frame controlled by Raspberry Pi with Python")
-
-**Good news: The Raspberry Pi Zero W is more than capable of running RibbaPi!**
-
-Here is an update video on the latest changes to RibbaPi and gives a peek at the current software:
-[![IMAGE ALT TEXT](http://img.youtube.com/vi/-xVK28GpX0w/0.jpg)](https://www.youtube.com/watch?v=-xVK28GpX0w "Update on RibbaPi - 16x16 APA102 LED matrix build in a Ribba frame controlled by Raspberry Pi")
-
-These are some, but certainly not all, things that I used to build my RibbaPi:
+These are some, but certainly not all, things that I used to build my RibbaEdison:
 - Ikea Ribba picture frame, size 50x50cm
 - 5m, white PCB, 60 LEDs/m APA102 strip
-- Raspberry Pi 3 and later a Raspberry Pi Zero W
+- Intel Edison with Intel or Arduino Breakout board
 - 74AHCT125 level shifter
-- raspberry pi prototyping hat for soldering the logic level converter circuit
+- Edison prototyping hat for soldering the logic level converter circuit
 - 488x488x3,2mm wood plate (HDF)
 - 2,5mm^2 copper wire for the outer power rails
 - 1,5mm^2 copper wire for each power row
@@ -40,10 +32,10 @@ Notes about the software:
 - gameframe animations supported
 - original blinkenlights animations supported
 - analogue clock animation shows current time
-- http server accepts strings that RibbaPi displays as scrolling text
+- http server accepts strings that RibbaEdison displays as scrolling text
 - tpm2.net server receives tpm2.net streams any time and interrupts playing animations
 - when not connected to APA102 LEDs a virtual display can be used on the local computer that simulates the LED matrix. Very handy for development!
-- currently all parameters are set in the ribbapi.py - also called "the brain"
+- currently all parameters are set in the RibbaEdison.py - also called "the brain"
 
 A lot of fine tuning and enhancements are needed.
 
